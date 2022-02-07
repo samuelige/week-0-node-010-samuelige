@@ -2,13 +2,27 @@
 
 Meet Anna, she likes to travel with as many clean pair of socks for her trips abroad.
 
+- likes to travel with n clean socks
+
 Anna's socks are divided into two drawers: clean and dirty socks. Anna has an unusual washing machine that can only wash a sock at a time and clean at most K socks described by `noOfWashes`.
+
+- drawers = {"clean": [], "dirty": []}
+
+- machines washes a 1 sock at a time 
+- machine cleans at n (number of washes) socks  
 
 Anna wants to pick socks for laundering in such a way that after washing she will have a maximal number of clean, same-coloured pair of socks. It is possible that some socks cannot be paired with any other sock, because Anna may have lost socks over the years.
 
+- (drawers.dirty - number of washes) + sum of drawers.clean,
+- anna need also same pair of socks 
+
 ---
 
-Anna has exactly N clean and M dirty socks, which are described in the arrays `cleanPile` and `dirtyPile` respectively. The colours of the socks are represented as integers with _equal numbers_ representing identical colours.
+Anna has exactly N clean and M dirty socks, which are described in the 
+arrays `cleanPile` and `dirtyPile` respectively. The colours of the socks are represented as integers with _equal numbers_ representing identical colours.
+
+cleanPile = [];
+dirtyPile = [];
 
 For example, if Anna's washing machine can clean at most 2 socks.
 
